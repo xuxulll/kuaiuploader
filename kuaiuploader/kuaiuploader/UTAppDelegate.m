@@ -8,6 +8,8 @@
 
 #import "UTAppDelegate.h"
 
+#import "../SSKeyChain/SSKeychain/SSKeychain.h"
+
 @interface UTAppDelegate ()
 
 @property (nonatomic) NSStatusItem *statusItem;
