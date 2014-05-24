@@ -8,11 +8,38 @@
 
 #import "UTAppDelegate.h"
 
+@interface UTAppDelegate ()
+
+@property (nonatomic) NSStatusItem *statusItem;
+
+@end
+
 @implementation UTAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    
+    _statusItem.menu = _menu;
+    _statusItem.highlightMode = YES;
+    _statusItem.image = [NSImage imageNamed:@"AppIcon16"];
+    
+}
+
+- (IBAction)showAddLinkWindow:(id)sender {
+    [NSApp activateIgnoringOtherApps:YES];
+    
+    [_linkWindow makeKeyAndOrderFront:nil];
+}
+
+- (IBAction)showPreferencesWindow:(id)sender {
+    [NSApp activateIgnoringOtherApps:YES];
+    
+    [_prefWindow makeKeyAndOrderFront:nil];
+}
+
+- (IBAction)quitApp:(id)sender {
+    [NSApp terminate:nil];
 }
 
 @end

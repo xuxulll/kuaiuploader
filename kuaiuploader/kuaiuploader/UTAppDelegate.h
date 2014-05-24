@@ -10,6 +10,10 @@
 
 @interface UTAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSWindow *linkWindow;
+
+@property (assign) IBOutlet NSWindow *prefWindow;
+
+@property (weak) IBOutlet NSMenu *menu;
 
 @end
