@@ -1,3 +1,6 @@
 [submodule "kuaiuploader/SSKeyChain"]
 	path = kuaiuploader/SSKeyChain
 	url = https://github.com/soffes/sskeychain
+[submodule "kuaiuploader/TFHpple"]
+	path = kuaiuploader/TFHpple
+	url = https://github.com/topfunky/hpple
