@@ -12,8 +12,6 @@
 
 @property (assign) IBOutlet NSWindow *linkWindow;
 
-@property (assign) IBOutlet NSWindow *prefWindow;
-
 @property (assign) IBOutlet NSWindow *verifyWindow;
 
 @property (weak) IBOutlet NSMenu *menu;

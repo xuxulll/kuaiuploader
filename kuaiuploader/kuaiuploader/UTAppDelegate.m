@@ -75,41 +75,40 @@
 
 - (IBAction)submitVerify:(id)sender {
     
-    NSString *verify;
-    
     [_verifyIndicator startAnimation:nil];
     [_verifyIndicator setHidden:NO];
-    
-    NSString *verifyURL = [NSString stringWithFormat:@"http://kuai.xunlei.com/webfilemail_interface?v_code=%@&shortkey=tiMECQIAWgAPkPJQd86&ref=&action=check_verify", [_verifyText.stringValue lowercaseString]];
-    
-    [self fetchResponseData:[NSURL URLWithString:verifyURL]];
-    
-    TFHpple *h = [TFHpple hppleWithHTMLData:[self fetchResponseData:[NSURL URLWithString:_currentLink]]];
-    
-    verify = [self requireVerificationFromTFHpple:h];
-    
-    if (verify) {
-        _verifyImage.image = [[NSImage alloc] initWithContentsOfURL:[NSURL URLWithString:verify]];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString *verify;
         
-        [_verifyIndicator stopAnimation:nil];
-    } else {
+        NSString *verifyURL = [NSString stringWithFormat:@"http://kuai.xunlei.com/webfilemail_interface?v_code=%@&shortkey=tiMECQIAWgAPkPJQd86&ref=&action=check_verify", [_verifyText.stringValue lowercaseString]];
         
-        [_verifyIndicator stopAnimation:nil];
+        [self fetchResponseData:[NSURL URLWithString:verifyURL]];
         
-        [NSApp endSheet:_verifyWindow];
+        TFHpple *h = [TFHpple hppleWithHTMLData:[self fetchResponseData:[NSURL URLWithString:_currentLink]]];
         
-        [_verifyWindow close];
+        verify = [self requireVerificationFromTFHpple:h];
         
-        _verifyWindow = nil;
-        
-        _shouldSuspend = NO;
-    }
-}
-
-- (IBAction)showPreferencesWindow:(id)sender {
-    [NSApp activateIgnoringOtherApps:YES];
-    
-    [_prefWindow makeKeyAndOrderFront:nil];
+        if (verify) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                _verifyImage.image = [[NSImage alloc] initWithContentsOfURL:[NSURL URLWithString:verify]];
+                
+                [_verifyIndicator stopAnimation:nil];
+            });
+        } else {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [_verifyIndicator stopAnimation:nil];
+                
+                [NSApp endSheet:_verifyWindow];
+                
+                [_verifyWindow close];
+                
+                _verifyWindow = nil;
+                
+                _shouldSuspend = NO;
+            });
+        }
+    });
 }
 
 - (IBAction)quitApp:(id)sender {
@@ -179,6 +178,8 @@
             
             [self addSublinkToThunder:subLinks];
         });
+    } else {
+        [self addSublinkToThunder:@[xurl]];
     }
 }
 
@@ -239,9 +240,16 @@
         
         [self copyToPasteBoard:[fileLinks componentsJoinedByString:@"\r\n"]];
         
+        NSUserNotification *notification = [[NSUserNotification alloc] init];
+        notification.title = NSLocalizedString(@"Success", nil);
+        notification.informativeText = NSLocalizedString(@"All links has been copied to your pasteboard", nil);
+        notification.soundName = NSUserNotificationDefaultSoundName;
+        [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             [_addLinkIndicator stopAnimation:nil];
             [_linkWindow close];
+            self.kuaiLink = @"";
         });
     });
 }
