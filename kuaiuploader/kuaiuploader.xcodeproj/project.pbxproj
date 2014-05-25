@@ -7,20 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B073E3C193096690010F336 /* ConvertURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E1A193096690010F336 /* ConvertURL.m */; };
-		3B073E3D193096690010F336 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B073E1B193096690010F336 /* InfoPlist.strings */; };
-		3B073E40193096690010F336 /* HYXunleiLixianAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E22193096690010F336 /* HYXunleiLixianAPI.m */; };
-		3B073E41193096690010F336 /* Kuai.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E24193096690010F336 /* Kuai.m */; };
-		3B073E42193096690010F336 /* LCHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E26193096690010F336 /* LCHTTPConnection.m */; };
-		3B073E43193096690010F336 /* md5.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E28193096690010F336 /* md5.m */; };
-		3B073E44193096690010F336 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E2A193096690010F336 /* NSData+Base64.m */; };
-		3B073E45193096690010F336 /* NSDictionary+JSONDict.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E2C193096690010F336 /* NSDictionary+JSONDict.m */; };
-		3B073E46193096690010F336 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E2E193096690010F336 /* NSString+Base64.m */; };
-		3B073E47193096690010F336 /* NSString+RE.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E30193096690010F336 /* NSString+RE.m */; };
-		3B073E48193096690010F336 /* ParseElements.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E32193096690010F336 /* ParseElements.m */; };
-		3B073E49193096690010F336 /* TondarAPI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B073E33193096690010F336 /* TondarAPI-Info.plist */; };
-		3B073E4A193096690010F336 /* URlEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E36193096690010F336 /* URlEncode.m */; };
-		3B073E4B193096690010F336 /* XunleiItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E38193096690010F336 /* XunleiItemInfo.m */; };
+		3B073E92193099E00010F336 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E78193099E00010F336 /* TFHpple.m */; };
+		3B073E93193099E00010F336 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E7A193099E00010F336 /* TFHppleElement.m */; };
+		3B073E99193099E00010F336 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E83193099E00010F336 /* XPathQuery.m */; };
+		3B073EA119309A360010F336 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B073EA019309A360010F336 /* libxml2.2.dylib */; };
 		3B57D5B319308B010083E49F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B57D5B219308B010083E49F /* Cocoa.framework */; };
 		3B57D5BD19308B010083E49F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B57D5BB19308B010083E49F /* InfoPlist.strings */; };
 		3B57D5BF19308B010083E49F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B57D5BE19308B010083E49F /* main.m */; };
@@ -35,34 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3B073E10193095E50010F336 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3B073E09193095E40010F336 /* SSKeychain.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 21CC42A717DB874300201DDC;
-			remoteInfo = SSKeychain;
-		};
-		3B073E12193095E50010F336 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3B073E09193095E40010F336 /* SSKeychain.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 21CC42C217DB874300201DDC;
-			remoteInfo = SSKeychainTests;
-		};
-		3B073E14193095E50010F336 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3B073E09193095E40010F336 /* SSKeychain.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 21B85B2418EC9455009D2B98;
-			remoteInfo = SSKeychainMac;
-		};
-		3B073E16193095E50010F336 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3B073E09193095E40010F336 /* SSKeychain.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 21B85B4318EC9456009D2B98;
-			remoteInfo = SSKeychainMacTests;
-		};
 		3B57D5D419308B010083E49F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3B57D5A719308B010083E49F /* Project object */;
@@ -73,35 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B073E09193095E40010F336 /* SSKeychain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SSKeychain.xcodeproj; path = SSKeyChain/SSKeychain.xcodeproj; sourceTree = "<group>"; };
-		3B073E19193096690010F336 /* ConvertURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertURL.h; sourceTree = "<group>"; };
-		3B073E1A193096690010F336 /* ConvertURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertURL.m; sourceTree = "<group>"; };
-		3B073E1C193096690010F336 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3B073E21193096690010F336 /* HYXunleiLixianAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYXunleiLixianAPI.h; sourceTree = "<group>"; };
-		3B073E22193096690010F336 /* HYXunleiLixianAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYXunleiLixianAPI.m; sourceTree = "<group>"; };
-		3B073E23193096690010F336 /* Kuai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kuai.h; sourceTree = "<group>"; };
-		3B073E24193096690010F336 /* Kuai.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kuai.m; sourceTree = "<group>"; };
-		3B073E25193096690010F336 /* LCHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHTTPConnection.h; sourceTree = "<group>"; };
-		3B073E26193096690010F336 /* LCHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHTTPConnection.m; sourceTree = "<group>"; };
-		3B073E27193096690010F336 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
-		3B073E28193096690010F336 /* md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = md5.m; sourceTree = "<group>"; };
-		3B073E29193096690010F336 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		3B073E2A193096690010F336 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		3B073E2B193096690010F336 /* NSDictionary+JSONDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSONDict.h"; sourceTree = "<group>"; };
-		3B073E2C193096690010F336 /* NSDictionary+JSONDict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONDict.m"; sourceTree = "<group>"; };
-		3B073E2D193096690010F336 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
-		3B073E2E193096690010F336 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
-		3B073E2F193096690010F336 /* NSString+RE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RE.h"; sourceTree = "<group>"; };
-		3B073E30193096690010F336 /* NSString+RE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RE.m"; sourceTree = "<group>"; };
-		3B073E31193096690010F336 /* ParseElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseElements.h; sourceTree = "<group>"; };
-		3B073E32193096690010F336 /* ParseElements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseElements.m; sourceTree = "<group>"; };
-		3B073E33193096690010F336 /* TondarAPI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TondarAPI-Info.plist"; sourceTree = "<group>"; };
-		3B073E34193096690010F336 /* TondarAPI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TondarAPI-Prefix.pch"; sourceTree = "<group>"; };
-		3B073E35193096690010F336 /* URlEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URlEncode.h; sourceTree = "<group>"; };
-		3B073E36193096690010F336 /* URlEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URlEncode.m; sourceTree = "<group>"; };
-		3B073E37193096690010F336 /* XunleiItemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XunleiItemInfo.h; sourceTree = "<group>"; };
-		3B073E38193096690010F336 /* XunleiItemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XunleiItemInfo.m; sourceTree = "<group>"; };
-		3B073E39193096690010F336 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		3B073E77193099E00010F336 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		3B073E78193099E00010F336 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		3B073E79193099E00010F336 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		3B073E7A193099E00010F336 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		3B073E82193099E00010F336 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		3B073E83193099E00010F336 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		3B073EA019309A360010F336 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		3B57D5AF19308B010083E49F /* kuaiuploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kuaiuploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B57D5B219308B010083E49F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3B57D5B519308B010083E49F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -128,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B073EA119309A360010F336 /* libxml2.2.dylib in Frameworks */,
 				3B57D5B319308B010083E49F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,55 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B073E0A193095E40010F336 /* Products */ = {
+		3B073E5F193099E00010F336 /* TFHpple */ = {
 			isa = PBXGroup;
 			children = (
-				3B073E11193095E50010F336 /* SSKeychain.app */,
-				3B073E13193095E50010F336 /* SSKeychainTests.xctest */,
-				3B073E15193095E50010F336 /* SSKeychainMac.app */,
-				3B073E17193095E50010F336 /* SSKeychainMacTests.xctest */,
+				3B073E77193099E00010F336 /* TFHpple.h */,
+				3B073E78193099E00010F336 /* TFHpple.m */,
+				3B073E79193099E00010F336 /* TFHppleElement.h */,
+				3B073E7A193099E00010F336 /* TFHppleElement.m */,
+				3B073E82193099E00010F336 /* XPathQuery.h */,
+				3B073E83193099E00010F336 /* XPathQuery.m */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3B073E18193096690010F336 /* TondarAPI */ = {
-			isa = PBXGroup;
-			children = (
-				3B073E19193096690010F336 /* ConvertURL.h */,
-				3B073E1A193096690010F336 /* ConvertURL.m */,
-				3B073E1B193096690010F336 /* InfoPlist.strings */,
-				3B073E21193096690010F336 /* HYXunleiLixianAPI.h */,
-				3B073E22193096690010F336 /* HYXunleiLixianAPI.m */,
-				3B073E23193096690010F336 /* Kuai.h */,
-				3B073E24193096690010F336 /* Kuai.m */,
-				3B073E25193096690010F336 /* LCHTTPConnection.h */,
-				3B073E26193096690010F336 /* LCHTTPConnection.m */,
-				3B073E27193096690010F336 /* md5.h */,
-				3B073E28193096690010F336 /* md5.m */,
-				3B073E29193096690010F336 /* NSData+Base64.h */,
-				3B073E2A193096690010F336 /* NSData+Base64.m */,
-				3B073E2B193096690010F336 /* NSDictionary+JSONDict.h */,
-				3B073E2C193096690010F336 /* NSDictionary+JSONDict.m */,
-				3B073E2D193096690010F336 /* NSString+Base64.h */,
-				3B073E2E193096690010F336 /* NSString+Base64.m */,
-				3B073E2F193096690010F336 /* NSString+RE.h */,
-				3B073E30193096690010F336 /* NSString+RE.m */,
-				3B073E31193096690010F336 /* ParseElements.h */,
-				3B073E32193096690010F336 /* ParseElements.m */,
-				3B073E33193096690010F336 /* TondarAPI-Info.plist */,
-				3B073E34193096690010F336 /* TondarAPI-Prefix.pch */,
-				3B073E35193096690010F336 /* URlEncode.h */,
-				3B073E36193096690010F336 /* URlEncode.m */,
-				3B073E37193096690010F336 /* XunleiItemInfo.h */,
-				3B073E38193096690010F336 /* XunleiItemInfo.m */,
-			);
-			path = TondarAPI;
-			sourceTree = "<group>";
+			path = TFHpple;
+			sourceTree = SOURCE_ROOT;
 		};
 		3B57D5A619308B010083E49F = {
 			isa = PBXGroup;
 			children = (
-				3B073E09193095E40010F336 /* SSKeychain.xcodeproj */,
 				3B57D5B819308B010083E49F /* kuaiuploader */,
 				3B57D5D619308B010083E49F /* kuaiuploaderTests */,
 				3B57D5B119308B010083E49F /* Frameworks */,
@@ -212,6 +120,7 @@
 		3B57D5B119308B010083E49F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B073EA019309A360010F336 /* libxml2.2.dylib */,
 				3B57D5B219308B010083E49F /* Cocoa.framework */,
 				3B57D5D119308B010083E49F /* XCTest.framework */,
 				3B57D5B419308B010083E49F /* Other Frameworks */,
@@ -232,7 +141,7 @@
 		3B57D5B819308B010083E49F /* kuaiuploader */ = {
 			isa = PBXGroup;
 			children = (
-				3B073E18193096690010F336 /* TondarAPI */,
+				3B073E5F193099E00010F336 /* TFHpple */,
 				3B57D5C419308B010083E49F /* UTAppDelegate.h */,
 				3B57D5C519308B010083E49F /* UTAppDelegate.m */,
 				3B57D5C719308B010083E49F /* MainMenu.xib */,
@@ -337,12 +246,6 @@
 			mainGroup = 3B57D5A619308B010083E49F;
 			productRefGroup = 3B57D5B019308B010083E49F /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 3B073E0A193095E40010F336 /* Products */;
-					ProjectRef = 3B073E09193095E40010F336 /* SSKeychain.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				3B57D5AE19308B010083E49F /* kuaiuploader */,
@@ -351,48 +254,15 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		3B073E11193095E50010F336 /* SSKeychain.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = SSKeychain.app;
-			remoteRef = 3B073E10193095E50010F336 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3B073E13193095E50010F336 /* SSKeychainTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SSKeychainTests.xctest;
-			remoteRef = 3B073E12193095E50010F336 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3B073E15193095E50010F336 /* SSKeychainMac.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = SSKeychainMac.app;
-			remoteRef = 3B073E14193095E50010F336 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3B073E17193095E50010F336 /* SSKeychainMacTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SSKeychainMacTests.xctest;
-			remoteRef = 3B073E16193095E50010F336 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		3B57D5AD19308B010083E49F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B073E49193096690010F336 /* TondarAPI-Info.plist in Resources */,
 				3B57D5BD19308B010083E49F /* InfoPlist.strings in Resources */,
 				3B57D5CB19308B010083E49F /* Images.xcassets in Resources */,
 				3B57D5C319308B010083E49F /* Credits.rtf in Resources */,
 				3B57D5C919308B010083E49F /* MainMenu.xib in Resources */,
-				3B073E3D193096690010F336 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,20 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B073E42193096690010F336 /* LCHTTPConnection.m in Sources */,
-				3B073E43193096690010F336 /* md5.m in Sources */,
-				3B073E41193096690010F336 /* Kuai.m in Sources */,
 				3B57D5BF19308B010083E49F /* main.m in Sources */,
-				3B073E46193096690010F336 /* NSString+Base64.m in Sources */,
+				3B073E99193099E00010F336 /* XPathQuery.m in Sources */,
+				3B073E93193099E00010F336 /* TFHppleElement.m in Sources */,
+				3B073E92193099E00010F336 /* TFHpple.m in Sources */,
 				3B57D5C619308B010083E49F /* UTAppDelegate.m in Sources */,
-				3B073E48193096690010F336 /* ParseElements.m in Sources */,
-				3B073E44193096690010F336 /* NSData+Base64.m in Sources */,
-				3B073E3C193096690010F336 /* ConvertURL.m in Sources */,
-				3B073E4B193096690010F336 /* XunleiItemInfo.m in Sources */,
-				3B073E4A193096690010F336 /* URlEncode.m in Sources */,
-				3B073E45193096690010F336 /* NSDictionary+JSONDict.m in Sources */,
-				3B073E40193096690010F336 /* HYXunleiLixianAPI.m in Sources */,
-				3B073E47193096690010F336 /* NSString+RE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,15 +308,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3B073E1B193096690010F336 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B073E1C193096690010F336 /* en */,
-				3B073E39193096690010F336 /* zh-Hans */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		3B57D5BB19308B010083E49F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -568,6 +420,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kuaiuploader/kuaiuploader-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "kuaiuploader/kuaiuploader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -581,6 +438,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kuaiuploader/kuaiuploader-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "kuaiuploader/kuaiuploader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

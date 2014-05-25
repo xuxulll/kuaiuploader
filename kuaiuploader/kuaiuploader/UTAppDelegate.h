@@ -14,6 +14,12 @@
 
 @property (assign) IBOutlet NSWindow *prefWindow;
 
+@property (assign) IBOutlet NSWindow *verifyWindow;
+
 @property (weak) IBOutlet NSMenu *menu;
+
+@property (copy, nonatomic) NSString *kuaiLink;
+
+@property (assign, nonatomic) BOOL isLoging;
 
 @end
