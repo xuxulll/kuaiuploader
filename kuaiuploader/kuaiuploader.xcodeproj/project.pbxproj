@@ -11,6 +11,8 @@
 		3B073E93193099E00010F336 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E7A193099E00010F336 /* TFHppleElement.m */; };
 		3B073E99193099E00010F336 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E83193099E00010F336 /* XPathQuery.m */; };
 		3B073EA119309A360010F336 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B073EA019309A360010F336 /* libxml2.2.dylib */; };
+		3B2EABD619337E7700483291 /* Demo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 3B2EABD519337E7700483291 /* Demo.mov */; };
+		3B2EABDA1933802600483291 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2EABD91933802600483291 /* AVFoundation.framework */; };
 		3B57D5B319308B010083E49F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B57D5B219308B010083E49F /* Cocoa.framework */; };
 		3B57D5BD19308B010083E49F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B57D5BB19308B010083E49F /* InfoPlist.strings */; };
 		3B57D5BF19308B010083E49F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B57D5BE19308B010083E49F /* main.m */; };
@@ -42,6 +44,10 @@
 		3B073E82193099E00010F336 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
 		3B073E83193099E00010F336 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		3B073EA019309A360010F336 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		3B2EABD519337E7700483291 /* Demo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Demo.mov; sourceTree = "<group>"; };
+		3B2EABD719337F3700483291 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		3B2EABD91933802600483291 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3B2EABDB1933811100483291 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		3B57D5AF19308B010083E49F /* kuaiuploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kuaiuploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B57D5B219308B010083E49F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3B57D5B519308B010083E49F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2EABDA1933802600483291 /* AVFoundation.framework in Frameworks */,
 				3B073EA119309A360010F336 /* libxml2.2.dylib in Frameworks */,
 				3B57D5B319308B010083E49F /* Cocoa.framework in Frameworks */,
 			);
@@ -120,6 +127,9 @@
 		3B57D5B119308B010083E49F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B2EABDB1933811100483291 /* CoreMedia.framework */,
+				3B2EABD91933802600483291 /* AVFoundation.framework */,
+				3B2EABD719337F3700483291 /* QTKit.framework */,
 				3B073EA019309A360010F336 /* libxml2.2.dylib */,
 				3B57D5B219308B010083E49F /* Cocoa.framework */,
 				3B57D5D119308B010083E49F /* XCTest.framework */,
@@ -154,6 +164,7 @@
 		3B57D5B919308B010083E49F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3B2EABD519337E7700483291 /* Demo.mov */,
 				3B57D5BA19308B010083E49F /* kuaiuploader-Info.plist */,
 				3B57D5BB19308B010083E49F /* InfoPlist.strings */,
 				3B57D5BE19308B010083E49F /* main.m */,
@@ -261,6 +272,7 @@
 			files = (
 				3B57D5BD19308B010083E49F /* InfoPlist.strings in Resources */,
 				3B57D5CB19308B010083E49F /* Images.xcassets in Resources */,
+				3B2EABD619337E7700483291 /* Demo.mov in Resources */,
 				3B57D5C319308B010083E49F /* Credits.rtf in Resources */,
 				3B57D5C919308B010083E49F /* MainMenu.xib in Resources */,
 			);

@@ -37,6 +37,7 @@
     _statusItem.highlightMode = YES;
     _statusItem.image = [NSImage imageNamed:@"AppIcon16"];
     
+    [self firstLaunch];
 }
 
 - (IBAction)showAddLinkWindow:(id)sender {
@@ -113,6 +114,19 @@
 
 - (IBAction)quitApp:(id)sender {
     [NSApp terminate:nil];
+}
+
+- (void)firstLaunch {
+    [NSApp activateIgnoringOtherApps:YES];
+    [_tutorialWindow makeKeyAndOrderFront:nil];
+    
+    AVPlayer *player = [AVPlayer playerWithURL:[NSURL fileURLWithPath:[NSBundle pathForResource:@"Demo" ofType:@"mov" inDirectory:[[NSBundle mainBundle] resourcePath]]]];
+    
+    AVPlayerLayer * playerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
+    [playerLayer setFrame:_tutorialWindow.frame];
+    [_tutorialWindow.contentView addSublayer:playerLayer];
+    
+    [player play];
 }
 
 - (void)addLinkToThunder:(NSString *)xurl isFolderShare:(BOOL)isFolderShare {

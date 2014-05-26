@@ -8,11 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import <AVFoundation/AVFoundation.h>
+
+
 @interface UTAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *linkWindow;
 
 @property (assign) IBOutlet NSWindow *verifyWindow;
+
+@property (unsafe_unretained) IBOutlet NSWindow *tutorialWindow;
 
 @property (weak) IBOutlet NSMenu *menu;
 
