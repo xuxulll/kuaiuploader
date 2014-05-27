@@ -127,6 +127,11 @@
     [self firstLaunch];
 }
 
+- (IBAction)about:(id)sender {
+    [NSApp activateIgnoringOtherApps:YES];
+    [_aboutWindow makeKeyAndOrderFront:nil];
+}
+
 - (IBAction)quitApp:(id)sender {
     [NSApp terminate:nil];
 }

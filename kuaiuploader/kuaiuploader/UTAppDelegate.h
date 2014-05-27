@@ -19,6 +19,8 @@
 
 @property (unsafe_unretained) IBOutlet NSWindow *tutorialWindow;
 
+@property (unsafe_unretained) IBOutlet NSWindow *aboutWindow;
+
 @property (weak) IBOutlet NSMenu *menu;
 
 @property (copy, nonatomic) NSString *kuaiLink;

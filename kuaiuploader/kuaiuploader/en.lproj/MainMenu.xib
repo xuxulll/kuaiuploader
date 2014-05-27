@@ -14,6 +14,7 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="UTAppDelegate">
             <connections>
+                <outlet property="aboutWindow" destination="uEJ-yj-qWa" id="8Yd-1Z-0HO"/>
                 <outlet property="addLinkIndicator" destination="3Z9-1q-Q6j" id="j3Q-Vj-ajR"/>
                 <outlet property="linkWindow" destination="QvC-M9-y7g" id="ayA-Se-VyB"/>
                 <outlet property="menu" destination="SM6-mt-wtU" id="yyh-oX-yRn"/>
@@ -751,6 +752,12 @@ Gw
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="I85-jp-lEd"/>
+                <menuItem title="About" id="tlp-ao-R2a">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="about:" target="Voe-Tx-rLC" id="urr-Un-zjY"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="Help" id="at8-T0-jOe">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -863,5 +870,65 @@ Gw
                 </constraints>
             </view>
         </window>
+        <window title="About Us" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="uEJ-yj-qWa">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <rect key="contentRect" x="196" y="207" width="406" height="240"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" id="S00-k3-cEC">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="240"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RKM-Tj-mlK">
+                        <rect key="frame" x="20" y="73" width="147" height="147"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="147" id="njj-91-Yp9"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="AppIcon" id="DYO-fS-exJ"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZSX-bn-9PK">
+                        <rect key="frame" x="184" y="94" width="204" height="126"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="126" id="cq1-h4-ANy"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="AjF-lO-yMm">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">Coding:
+
+xuxulll
+
+W.MS
+
+</string>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wvt-Ep-349">
+                        <rect key="frame" x="47" y="20" width="313" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Copyright © U1timate Studio. All rights reserved." id="3ou-UY-aHp">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RKM-Tj-mlK" firstAttribute="top" secondItem="ZSX-bn-9PK" secondAttribute="top" id="42v-Of-HVh"/>
+                    <constraint firstItem="wvt-Ep-349" firstAttribute="top" secondItem="RKM-Tj-mlK" secondAttribute="bottom" constant="36" id="IGm-by-nPs"/>
+                    <constraint firstAttribute="bottom" secondItem="wvt-Ep-349" secondAttribute="bottom" constant="20" symbolic="YES" id="VnZ-r2-oax"/>
+                    <constraint firstItem="wvt-Ep-349" firstAttribute="centerX" secondItem="S00-k3-cEC" secondAttribute="centerX" id="aif-ND-vvn"/>
+                    <constraint firstItem="RKM-Tj-mlK" firstAttribute="top" secondItem="S00-k3-cEC" secondAttribute="top" constant="20" symbolic="YES" id="cC9-ws-YgZ"/>
+                    <constraint firstAttribute="trailing" secondItem="ZSX-bn-9PK" secondAttribute="trailing" constant="20" symbolic="YES" id="jgr-P5-Zcj"/>
+                    <constraint firstItem="RKM-Tj-mlK" firstAttribute="leading" secondItem="S00-k3-cEC" secondAttribute="leading" constant="20" symbolic="YES" id="mKE-xw-Hqc"/>
+                    <constraint firstItem="ZSX-bn-9PK" firstAttribute="leading" secondItem="RKM-Tj-mlK" secondAttribute="trailing" constant="19" id="ttF-Jm-eZu"/>
+                </constraints>
+            </view>
+        </window>
     </objects>
+    <resources>
+        <image name="AppIcon" width="128" height="128"/>
+    </resources>
 </document>
