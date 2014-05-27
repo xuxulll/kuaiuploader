@@ -67,6 +67,7 @@
 		3B57D5D819308B010083E49F /* kuaicopyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kuaicopyTests-Info.plist"; sourceTree = "<group>"; };
 		3B57D5DA19308B010083E49F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B57D5DC19308B010083E49F /* kuaiuploaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kuaiuploaderTests.m; sourceTree = "<group>"; };
+		3BE3EA7E1934D3F00003E9C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		3BF1558D1934C67D006C4A53 /* UTAvFoundationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTAvFoundationView.h; sourceTree = "<group>"; };
 		3BF1558E1934C67D006C4A53 /* UTAvFoundationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTAvFoundationView.m; sourceTree = "<group>"; };
 		3BF155901934C9AC006C4A53 /* Demo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Demo.mov; sourceTree = "<group>"; };
@@ -336,6 +337,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3B57D5BC19308B010083E49F /* en */,
+				3BE3EA7E1934D3F00003E9C0 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

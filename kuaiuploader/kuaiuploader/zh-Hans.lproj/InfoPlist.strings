@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "快传提取";
+CFBundleDisplayName = "快传提取";
