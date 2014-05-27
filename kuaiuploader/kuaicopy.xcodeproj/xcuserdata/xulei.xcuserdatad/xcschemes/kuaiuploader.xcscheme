@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3B57D5AE19308B010083E49F"
                BuildableName = "kuaiuploader.app"
-               BlueprintName = "kuaiuploader"
-               ReferencedContainer = "container:kuaiuploader.xcodeproj">
+               BlueprintName = "kuaicopy"
+               ReferencedContainer = "container:kuaicopy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3B57D5CF19308B010083E49F"
                BuildableName = "kuaiuploaderTests.xctest"
-               BlueprintName = "kuaiuploaderTests"
-               ReferencedContainer = "container:kuaiuploader.xcodeproj">
+               BlueprintName = "kuaicopyTests"
+               ReferencedContainer = "container:kuaicopy.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3B57D5AE19308B010083E49F"
             BuildableName = "kuaiuploader.app"
-            BlueprintName = "kuaiuploader"
-            ReferencedContainer = "container:kuaiuploader.xcodeproj">
+            BlueprintName = "kuaicopy"
+            ReferencedContainer = "container:kuaicopy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3B57D5AE19308B010083E49F"
             BuildableName = "kuaiuploader.app"
-            BlueprintName = "kuaiuploader"
-            ReferencedContainer = "container:kuaiuploader.xcodeproj">
+            BlueprintName = "kuaicopy"
+            ReferencedContainer = "container:kuaicopy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3B57D5AE19308B010083E49F"
             BuildableName = "kuaiuploader.app"
-            BlueprintName = "kuaiuploader"
-            ReferencedContainer = "container:kuaiuploader.xcodeproj">
+            BlueprintName = "kuaicopy"
+            ReferencedContainer = "container:kuaicopy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

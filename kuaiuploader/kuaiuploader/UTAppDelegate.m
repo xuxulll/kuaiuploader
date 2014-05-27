@@ -10,6 +10,8 @@
 
 #import "TFHpple.h"
 
+#import "UTAvFoundationView.h"
+
 @interface UTAppDelegate ()
 
 @property (nonatomic) NSStatusItem *statusItem;
@@ -20,6 +22,8 @@
 @property (weak) IBOutlet NSProgressIndicator *verifyIndicator;
 @property (weak) IBOutlet NSProgressIndicator *addLinkIndicator;
 
+@property (weak) IBOutlet UTAvFoundationView *playerView;
+
 @end
 
 @implementation UTAppDelegate {
@@ -27,6 +31,10 @@
     NSMutableArray *_links;
     NSString *_currentLink;
     BOOL _shouldSuspend;
+}
+
++ (void)initialize {
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{@"UTFirstLaunch": [NSNumber numberWithBool:YES]}];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -37,7 +45,10 @@
     _statusItem.highlightMode = YES;
     _statusItem.image = [NSImage imageNamed:@"AppIcon16"];
     
-    [self firstLaunch];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"UTFirstLaunch"]) {
+        
+        [self firstLaunch];
+    }
 }
 
 - (IBAction)showAddLinkWindow:(id)sender {
@@ -112,6 +123,10 @@
     });
 }
 
+- (IBAction)help:(id)sender {
+    [self firstLaunch];
+}
+
 - (IBAction)quitApp:(id)sender {
     [NSApp terminate:nil];
 }
@@ -120,13 +135,13 @@
     [NSApp activateIgnoringOtherApps:YES];
     [_tutorialWindow makeKeyAndOrderFront:nil];
     
-    AVPlayer *player = [AVPlayer playerWithURL:[NSURL fileURLWithPath:[NSBundle pathForResource:@"Demo" ofType:@"mov" inDirectory:[[NSBundle mainBundle] resourcePath]]]];
+    _playerView.videoURL = [NSBundle URLForResource:@"Demo" withExtension:@"mov" subdirectory:nil inBundleWithURL:[[NSBundle mainBundle] bundleURL]];
     
-    AVPlayerLayer * playerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
-    [playerLayer setFrame:_tutorialWindow.frame];
-    [_tutorialWindow.contentView addSublayer:playerLayer];
+    //NSLog(@"_url: %@", _playerView.videoURL);
     
-    [player play];
+    [_playerView play];
+    
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"UTFirstLaunch"];
 }
 
 - (void)addLinkToThunder:(NSString *)xurl isFolderShare:(BOOL)isFolderShare {

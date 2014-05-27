@@ -11,19 +11,21 @@
 		3B073E93193099E00010F336 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E7A193099E00010F336 /* TFHppleElement.m */; };
 		3B073E99193099E00010F336 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B073E83193099E00010F336 /* XPathQuery.m */; };
 		3B073EA119309A360010F336 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B073EA019309A360010F336 /* libxml2.2.dylib */; };
-		3B2EABD619337E7700483291 /* Demo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 3B2EABD519337E7700483291 /* Demo.mov */; };
 		3B2EABDA1933802600483291 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2EABD91933802600483291 /* AVFoundation.framework */; };
 		3B57D5B319308B010083E49F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B57D5B219308B010083E49F /* Cocoa.framework */; };
 		3B57D5BD19308B010083E49F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B57D5BB19308B010083E49F /* InfoPlist.strings */; };
 		3B57D5BF19308B010083E49F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B57D5BE19308B010083E49F /* main.m */; };
 		3B57D5C319308B010083E49F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3B57D5C119308B010083E49F /* Credits.rtf */; };
 		3B57D5C619308B010083E49F /* UTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B57D5C519308B010083E49F /* UTAppDelegate.m */; };
-		3B57D5C919308B010083E49F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B57D5C719308B010083E49F /* MainMenu.xib */; };
 		3B57D5CB19308B010083E49F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B57D5CA19308B010083E49F /* Images.xcassets */; };
 		3B57D5D219308B010083E49F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B57D5D119308B010083E49F /* XCTest.framework */; };
 		3B57D5D319308B010083E49F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B57D5B219308B010083E49F /* Cocoa.framework */; };
 		3B57D5DB19308B010083E49F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B57D5D919308B010083E49F /* InfoPlist.strings */; };
 		3B57D5DD19308B010083E49F /* kuaiuploaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B57D5DC19308B010083E49F /* kuaiuploaderTests.m */; };
+		3BF1558F1934C67D006C4A53 /* UTAvFoundationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1558E1934C67D006C4A53 /* UTAvFoundationView.m */; };
+		3BF155911934C9AC006C4A53 /* Demo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 3BF155901934C9AC006C4A53 /* Demo.mov */; };
+		3BF155971934CFA3006C4A53 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF155951934CFA3006C4A53 /* MainMenu.xib */; };
+		3BF1559B1934D101006C4A53 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1559D1934D101006C4A53 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,29 +46,34 @@
 		3B073E82193099E00010F336 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
 		3B073E83193099E00010F336 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		3B073EA019309A360010F336 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
-		3B2EABD519337E7700483291 /* Demo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Demo.mov; sourceTree = "<group>"; };
 		3B2EABD719337F3700483291 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
 		3B2EABD91933802600483291 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3B2EABDB1933811100483291 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		3B57D5AF19308B010083E49F /* kuaiuploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kuaiuploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B57D5AF19308B010083E49F /* kuaicopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kuaicopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B57D5B219308B010083E49F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3B57D5B519308B010083E49F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3B57D5B619308B010083E49F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3B57D5B719308B010083E49F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3B57D5BA19308B010083E49F /* kuaiuploader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kuaiuploader-Info.plist"; sourceTree = "<group>"; };
+		3B57D5BA19308B010083E49F /* kuaicopy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kuaicopy-Info.plist"; sourceTree = "<group>"; };
 		3B57D5BC19308B010083E49F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B57D5BE19308B010083E49F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3B57D5C019308B010083E49F /* kuaiuploader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kuaiuploader-Prefix.pch"; sourceTree = "<group>"; };
+		3B57D5C019308B010083E49F /* kuaicopy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kuaicopy-Prefix.pch"; sourceTree = "<group>"; };
 		3B57D5C219308B010083E49F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		3B57D5C419308B010083E49F /* UTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTAppDelegate.h; sourceTree = "<group>"; };
 		3B57D5C519308B010083E49F /* UTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTAppDelegate.m; sourceTree = "<group>"; };
-		3B57D5C819308B010083E49F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3B57D5CA19308B010083E49F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3B57D5D019308B010083E49F /* kuaiuploaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kuaiuploaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B57D5D019308B010083E49F /* kuaicopyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kuaicopyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B57D5D119308B010083E49F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		3B57D5D819308B010083E49F /* kuaiuploaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kuaiuploaderTests-Info.plist"; sourceTree = "<group>"; };
+		3B57D5D819308B010083E49F /* kuaicopyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kuaicopyTests-Info.plist"; sourceTree = "<group>"; };
 		3B57D5DA19308B010083E49F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B57D5DC19308B010083E49F /* kuaiuploaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kuaiuploaderTests.m; sourceTree = "<group>"; };
+		3BF1558D1934C67D006C4A53 /* UTAvFoundationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTAvFoundationView.h; sourceTree = "<group>"; };
+		3BF1558E1934C67D006C4A53 /* UTAvFoundationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTAvFoundationView.m; sourceTree = "<group>"; };
+		3BF155901934C9AC006C4A53 /* Demo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Demo.mov; sourceTree = "<group>"; };
+		3BF155961934CFA3006C4A53 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3BF155981934CFE3006C4A53 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		3BF1559C1934D101006C4A53 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3BF1559E1934D104006C4A53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +125,8 @@
 		3B57D5B019308B010083E49F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B57D5AF19308B010083E49F /* kuaiuploader.app */,
-				3B57D5D019308B010083E49F /* kuaiuploaderTests.xctest */,
+				3B57D5AF19308B010083E49F /* kuaicopy.app */,
+				3B57D5D019308B010083E49F /* kuaicopyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,7 +161,9 @@
 				3B073E5F193099E00010F336 /* TFHpple */,
 				3B57D5C419308B010083E49F /* UTAppDelegate.h */,
 				3B57D5C519308B010083E49F /* UTAppDelegate.m */,
-				3B57D5C719308B010083E49F /* MainMenu.xib */,
+				3BF1558D1934C67D006C4A53 /* UTAvFoundationView.h */,
+				3BF1558E1934C67D006C4A53 /* UTAvFoundationView.m */,
+				3BF155951934CFA3006C4A53 /* MainMenu.xib */,
 				3B57D5CA19308B010083E49F /* Images.xcassets */,
 				3B57D5B919308B010083E49F /* Supporting Files */,
 			);
@@ -164,11 +173,12 @@
 		3B57D5B919308B010083E49F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3B2EABD519337E7700483291 /* Demo.mov */,
-				3B57D5BA19308B010083E49F /* kuaiuploader-Info.plist */,
+				3BF1559D1934D101006C4A53 /* Localizable.strings */,
+				3BF155901934C9AC006C4A53 /* Demo.mov */,
+				3B57D5BA19308B010083E49F /* kuaicopy-Info.plist */,
 				3B57D5BB19308B010083E49F /* InfoPlist.strings */,
 				3B57D5BE19308B010083E49F /* main.m */,
-				3B57D5C019308B010083E49F /* kuaiuploader-Prefix.pch */,
+				3B57D5C019308B010083E49F /* kuaicopy-Prefix.pch */,
 				3B57D5C119308B010083E49F /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -186,7 +196,7 @@
 		3B57D5D719308B010083E49F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3B57D5D819308B010083E49F /* kuaiuploaderTests-Info.plist */,
+				3B57D5D819308B010083E49F /* kuaicopyTests-Info.plist */,
 				3B57D5D919308B010083E49F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -195,9 +205,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3B57D5AE19308B010083E49F /* kuaiuploader */ = {
+		3B57D5AE19308B010083E49F /* kuaicopy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B57D5E019308B010083E49F /* Build configuration list for PBXNativeTarget "kuaiuploader" */;
+			buildConfigurationList = 3B57D5E019308B010083E49F /* Build configuration list for PBXNativeTarget "kuaicopy" */;
 			buildPhases = (
 				3B57D5AB19308B010083E49F /* Sources */,
 				3B57D5AC19308B010083E49F /* Frameworks */,
@@ -207,14 +217,14 @@
 			);
 			dependencies = (
 			);
-			name = kuaiuploader;
+			name = kuaicopy;
 			productName = kuaiuploader;
-			productReference = 3B57D5AF19308B010083E49F /* kuaiuploader.app */;
+			productReference = 3B57D5AF19308B010083E49F /* kuaicopy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3B57D5CF19308B010083E49F /* kuaiuploaderTests */ = {
+		3B57D5CF19308B010083E49F /* kuaicopyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B57D5E319308B010083E49F /* Build configuration list for PBXNativeTarget "kuaiuploaderTests" */;
+			buildConfigurationList = 3B57D5E319308B010083E49F /* Build configuration list for PBXNativeTarget "kuaicopyTests" */;
 			buildPhases = (
 				3B57D5CC19308B010083E49F /* Sources */,
 				3B57D5CD19308B010083E49F /* Frameworks */,
@@ -225,9 +235,9 @@
 			dependencies = (
 				3B57D5D519308B010083E49F /* PBXTargetDependency */,
 			);
-			name = kuaiuploaderTests;
+			name = kuaicopyTests;
 			productName = kuaiuploaderTests;
-			productReference = 3B57D5D019308B010083E49F /* kuaiuploaderTests.xctest */;
+			productReference = 3B57D5D019308B010083E49F /* kuaicopyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -245,7 +255,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3B57D5AA19308B010083E49F /* Build configuration list for PBXProject "kuaiuploader" */;
+			buildConfigurationList = 3B57D5AA19308B010083E49F /* Build configuration list for PBXProject "kuaicopy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -259,8 +269,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3B57D5AE19308B010083E49F /* kuaiuploader */,
-				3B57D5CF19308B010083E49F /* kuaiuploaderTests */,
+				3B57D5AE19308B010083E49F /* kuaicopy */,
+				3B57D5CF19308B010083E49F /* kuaicopyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,10 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B57D5BD19308B010083E49F /* InfoPlist.strings in Resources */,
+				3BF1559B1934D101006C4A53 /* Localizable.strings in Resources */,
+				3BF155971934CFA3006C4A53 /* MainMenu.xib in Resources */,
 				3B57D5CB19308B010083E49F /* Images.xcassets in Resources */,
-				3B2EABD619337E7700483291 /* Demo.mov in Resources */,
+				3BF155911934C9AC006C4A53 /* Demo.mov in Resources */,
 				3B57D5C319308B010083E49F /* Credits.rtf in Resources */,
-				3B57D5C919308B010083E49F /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +307,7 @@
 				3B57D5BF19308B010083E49F /* main.m in Sources */,
 				3B073E99193099E00010F336 /* XPathQuery.m in Sources */,
 				3B073E93193099E00010F336 /* TFHppleElement.m in Sources */,
+				3BF1558F1934C67D006C4A53 /* UTAvFoundationView.m in Sources */,
 				3B073E92193099E00010F336 /* TFHpple.m in Sources */,
 				3B57D5C619308B010083E49F /* UTAppDelegate.m in Sources */,
 			);
@@ -314,7 +326,7 @@
 /* Begin PBXTargetDependency section */
 		3B57D5D519308B010083E49F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3B57D5AE19308B010083E49F /* kuaiuploader */;
+			target = 3B57D5AE19308B010083E49F /* kuaicopy */;
 			targetProxy = 3B57D5D419308B010083E49F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -336,20 +348,30 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		3B57D5C719308B010083E49F /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B57D5C819308B010083E49F /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
 		3B57D5D919308B010083E49F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3B57D5DA19308B010083E49F /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3BF155951934CFA3006C4A53 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BF155961934CFA3006C4A53 /* en */,
+				3BF155981934CFE3006C4A53 /* zh-Hans */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		3BF1559D1934D101006C4A53 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BF1559C1934D101006C4A53 /* zh-Hans */,
+				3BF1559E1934D104006C4A53 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -387,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -420,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -431,14 +453,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "kuaiuploader/kuaiuploader-Prefix.pch";
+				GCC_PREFIX_HEADER = "kuaiuploader/kuaicopy-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/include/libxml2,
 				);
-				INFOPLIST_FILE = "kuaiuploader/kuaiuploader-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "kuaiuploader/kuaicopy-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = kuaicopy;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -449,14 +472,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "kuaiuploader/kuaiuploader-Prefix.pch";
+				GCC_PREFIX_HEADER = "kuaiuploader/kuaicopy-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/include/libxml2,
 				);
-				INFOPLIST_FILE = "kuaiuploader/kuaiuploader-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "kuaiuploader/kuaicopy-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = kuaicopy;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -476,8 +500,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "kuaiuploaderTests/kuaiuploaderTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "kuaiuploaderTests/kuaicopyTests-Info.plist";
+				PRODUCT_NAME = kuaicopyTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -494,8 +518,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kuaiuploader/kuaiuploader-Prefix.pch";
-				INFOPLIST_FILE = "kuaiuploaderTests/kuaiuploaderTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "kuaiuploaderTests/kuaicopyTests-Info.plist";
+				PRODUCT_NAME = kuaicopyTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -504,7 +528,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B57D5AA19308B010083E49F /* Build configuration list for PBXProject "kuaiuploader" */ = {
+		3B57D5AA19308B010083E49F /* Build configuration list for PBXProject "kuaicopy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B57D5DE19308B010083E49F /* Debug */,
@@ -513,7 +537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B57D5E019308B010083E49F /* Build configuration list for PBXNativeTarget "kuaiuploader" */ = {
+		3B57D5E019308B010083E49F /* Build configuration list for PBXNativeTarget "kuaicopy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B57D5E119308B010083E49F /* Debug */,
@@ -522,7 +546,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B57D5E319308B010083E49F /* Build configuration list for PBXNativeTarget "kuaiuploaderTests" */ = {
+		3B57D5E319308B010083E49F /* Build configuration list for PBXNativeTarget "kuaicopyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B57D5E419308B010083E49F /* Debug */,

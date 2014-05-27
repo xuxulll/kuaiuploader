@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1070" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
@@ -16,6 +17,7 @@
                 <outlet property="addLinkIndicator" destination="3Z9-1q-Q6j" id="j3Q-Vj-ajR"/>
                 <outlet property="linkWindow" destination="QvC-M9-y7g" id="ayA-Se-VyB"/>
                 <outlet property="menu" destination="SM6-mt-wtU" id="yyh-oX-yRn"/>
+                <outlet property="playerView" destination="zgC-Az-h2T" id="o4K-F0-V7q"/>
                 <outlet property="tutorialWindow" destination="odz-ar-a4J" id="kvu-1G-Jaz"/>
                 <outlet property="verifyImage" destination="JcF-XU-uuK" id="EUI-LI-O1c"/>
                 <outlet property="verifyIndicator" destination="YcZ-lJ-feI" id="cW3-ys-jYD"/>
@@ -26,11 +28,11 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="kuaiuploader" id="1Xt-HY-uBw">
+                <menuItem title="kuaicopy" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="kuaiuploader" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="kuaicopy" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About kuaiuploader" id="5kV-Vb-QxS">
+                            <menuItem title="About kuaicopy" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -44,7 +46,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide kuaiuploader" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide kuaicopy" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -62,7 +64,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit kuaiuploader" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit kuaicopy" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -663,7 +665,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="kuaiuploader Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="kuaicopy Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -713,7 +715,7 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="70" id="Fya-tI-3OQ"/>
                         </constraints>
-                        <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QKk-i4-4He">
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QKk-i4-4He">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent" base64-UTF8="YES">
@@ -749,6 +751,13 @@ Gw
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="I85-jp-lEd"/>
+                <menuItem title="Help" id="at8-T0-jOe">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="help:" target="Voe-Tx-rLC" id="ueR-dR-wNf"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Qlk-gE-1T5"/>
                 <menuItem title="Quit" id="htu-Fk-8bA">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -833,14 +842,25 @@ Gw
                 </subviews>
             </view>
         </window>
-        <window title="Notification" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="odz-ar-a4J">
+        <window title="Help" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="odz-ar-a4J">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="207" width="600" height="412"/>
+            <rect key="contentRect" x="196" y="207" width="518" height="378"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <view key="contentView" id="mgA-Jm-W50">
-                <rect key="frame" x="0.0" y="0.0" width="600" height="412"/>
+                <rect key="frame" x="0.0" y="0.0" width="518" height="378"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="zgC-Az-h2T" customClass="UTAvFoundationView">
+                        <rect key="frame" x="0.0" y="0.0" width="518" height="378"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zgC-Az-h2T" firstAttribute="leading" secondItem="mgA-Jm-W50" secondAttribute="leading" id="A2y-ej-KOr"/>
+                    <constraint firstItem="zgC-Az-h2T" firstAttribute="top" secondItem="mgA-Jm-W50" secondAttribute="top" id="NaK-Ct-OHy"/>
+                    <constraint firstAttribute="trailing" secondItem="zgC-Az-h2T" secondAttribute="trailing" id="VFf-Vn-J8v"/>
+                    <constraint firstAttribute="bottom" secondItem="zgC-Az-h2T" secondAttribute="bottom" id="VZQ-Qq-RVd"/>
+                </constraints>
             </view>
         </window>
     </objects>
