@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3B57D5AE19308B010083E49F"
-               BuildableName = "kuaiuploader.app"
+               BuildableName = "kuaicopy.app"
                BlueprintName = "kuaicopy"
                ReferencedContainer = "container:kuaicopy.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3B57D5CF19308B010083E49F"
-               BuildableName = "kuaiuploaderTests.xctest"
+               BuildableName = "kuaicopyTests.xctest"
                BlueprintName = "kuaicopyTests"
                ReferencedContainer = "container:kuaicopy.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3B57D5AE19308B010083E49F"
-            BuildableName = "kuaiuploader.app"
+            BuildableName = "kuaicopy.app"
             BlueprintName = "kuaicopy"
             ReferencedContainer = "container:kuaicopy.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3B57D5AE19308B010083E49F"
-            BuildableName = "kuaiuploader.app"
+            BuildableName = "kuaicopy.app"
             BlueprintName = "kuaicopy"
             ReferencedContainer = "container:kuaicopy.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3B57D5AE19308B010083E49F"
-            BuildableName = "kuaiuploader.app"
+            BuildableName = "kuaicopy.app"
             BlueprintName = "kuaicopy"
             ReferencedContainer = "container:kuaicopy.xcodeproj">
          </BuildableReference>
