@@ -15,7 +15,6 @@
 		3B57D5B319308B010083E49F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B57D5B219308B010083E49F /* Cocoa.framework */; };
 		3B57D5BD19308B010083E49F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B57D5BB19308B010083E49F /* InfoPlist.strings */; };
 		3B57D5BF19308B010083E49F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B57D5BE19308B010083E49F /* main.m */; };
-		3B57D5C319308B010083E49F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3B57D5C119308B010083E49F /* Credits.rtf */; };
 		3B57D5C619308B010083E49F /* UTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B57D5C519308B010083E49F /* UTAppDelegate.m */; };
 		3B57D5CB19308B010083E49F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B57D5CA19308B010083E49F /* Images.xcassets */; };
 		3B57D5D219308B010083E49F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B57D5D119308B010083E49F /* XCTest.framework */; };
@@ -58,7 +57,6 @@
 		3B57D5BC19308B010083E49F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B57D5BE19308B010083E49F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3B57D5C019308B010083E49F /* kuaicopy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kuaicopy-Prefix.pch"; sourceTree = "<group>"; };
-		3B57D5C219308B010083E49F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		3B57D5C419308B010083E49F /* UTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTAppDelegate.h; sourceTree = "<group>"; };
 		3B57D5C519308B010083E49F /* UTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTAppDelegate.m; sourceTree = "<group>"; };
 		3B57D5CA19308B010083E49F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -75,6 +73,7 @@
 		3BF155981934CFE3006C4A53 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
 		3BF1559C1934D101006C4A53 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		3BF1559E1934D104006C4A53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DF3206531934F13500349F3E /* kuaicopy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = kuaicopy.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +115,7 @@
 		3B57D5A619308B010083E49F = {
 			isa = PBXGroup;
 			children = (
+				DF3206531934F13500349F3E /* kuaicopy.entitlements */,
 				3B57D5B819308B010083E49F /* kuaiuploader */,
 				3B57D5D619308B010083E49F /* kuaiuploaderTests */,
 				3B57D5B119308B010083E49F /* Frameworks */,
@@ -180,7 +180,6 @@
 				3B57D5BB19308B010083E49F /* InfoPlist.strings */,
 				3B57D5BE19308B010083E49F /* main.m */,
 				3B57D5C019308B010083E49F /* kuaicopy-Prefix.pch */,
-				3B57D5C119308B010083E49F /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -249,8 +248,16 @@
 			attributes = {
 				CLASSPREFIX = UT;
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = xuxulll;
+				ORGANIZATIONNAME = UtStudio;
 				TargetAttributes = {
+					3B57D5AE19308B010083E49F = {
+						DevelopmentTeam = 2S99TBX93B;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
 					3B57D5CF19308B010083E49F = {
 						TestTargetID = 3B57D5AE19308B010083E49F;
 					};
@@ -286,7 +293,6 @@
 				3BF155971934CFA3006C4A53 /* MainMenu.xib in Resources */,
 				3B57D5CB19308B010083E49F /* Images.xcassets in Resources */,
 				3BF155911934C9AC006C4A53 /* Demo.mov in Resources */,
-				3B57D5C319308B010083E49F /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,14 +348,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		3B57D5C119308B010083E49F /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B57D5C219308B010083E49F /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
 		3B57D5D919308B010083E49F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -395,6 +393,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Jing Wang (2S99TBX93B)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -413,6 +413,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "788D2904-F239-4E98-8EBC-743F90254EAD";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -433,6 +434,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Jing Wang (2S99TBX93B)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -445,6 +448,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PROVISIONING_PROFILE = "788D2904-F239-4E98-8EBC-743F90254EAD";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -453,6 +457,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kuaicopy.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Jing Wang (2S99TBX93B)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kuaiuploader/kuaicopy-Prefix.pch";
@@ -463,7 +469,9 @@
 				);
 				INFOPLIST_FILE = "kuaiuploader/kuaicopy-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = kuaicopy;
+				PROVISIONING_PROFILE = "788D2904-F239-4E98-8EBC-743F90254EAD";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -472,6 +480,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kuaicopy.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Jing Wang (2S99TBX93B)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kuaiuploader/kuaicopy-Prefix.pch";
@@ -482,7 +492,9 @@
 				);
 				INFOPLIST_FILE = "kuaiuploader/kuaicopy-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = kuaicopy;
+				PROVISIONING_PROFILE = "788D2904-F239-4E98-8EBC-743F90254EAD";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
